@@ -12,3 +12,15 @@ else:
 #설명 : n의 모든 약수 answer에 저장 / 저장된 갯수 k보다 작으면 말이 안됨 -> print(0) / k-1로 k번째로 작은 약수 구할 수 있음
 ------------------------------------------------------------------
 #3460번 - 이진수(https://www.acmicpc.net/problem/3460)
+t = int(input())
+
+for i in range(t):
+  index = 0
+  n = int(input())
+  while n > 0:
+    if n % 2 == 1:
+      print(index, end = ' ')
+    n = n // 2   #n 나누기 2 == 0 조건일때는 아래 조건을 따르라
+    index += 1
+#설명 : 2
+# LSB (Least Significant Bit)의 위치: 0 
