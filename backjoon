@@ -1,0 +1,21 @@
+#백준 10818 - https://www.acmicpc.net/problem/10818
+a = map(int,input().split())
+lists = list(map(int,input().split()))
+s = sorted(lists)   ##### 작은 값 -> 큰 값 정렬
+print(s[0],s[-1])
+
+#백준 
+lists = list(map(int,input().split()))
+print(max(lists))
+print(lists.index(max(lists))+1)
+-----------------------------------------
+lists = []
+for _ in range(9):
+    i = int(input())                     ##############입력이 숫자 enter 숫자 enter (split()없으므로)
+    lists.append(i)
+print(max(lists))
+print(lists.index(max(lists))+1)
+
+#백준
+
+#백준
